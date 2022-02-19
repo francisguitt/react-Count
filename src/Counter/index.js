@@ -15,9 +15,10 @@ export const Counter = (props) => {
   };
   return (
     <div>
-      <h1>Contador: {props.count}</h1>
+      <h1>Contador:<span style={{color:'#ff0000', marginLeft:'20px'}}>{props.count}</span></h1>
       <button onClick={handleCountMinus}>➖</button>
       <button onClick={handleCountPlus}>✚</button>
+      <p>Simples contador até 50.</p>
     </div>
   );
 };
